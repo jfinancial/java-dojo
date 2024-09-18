@@ -1,2 +1,7 @@
 # java-dojo
-Various java refresher exercies
+
+- Dojos with IntStream
+
+@Todo
+- Matchers
+- Functional Java
