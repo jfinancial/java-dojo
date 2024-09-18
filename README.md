@@ -1,5 +1,6 @@
-# java-dojo
+# Java Dojo Exercises
 
+### Contents
 - Dojos with IntStream
 
 @Todo
