@@ -12,6 +12,10 @@ import static com.jfinancial.dojo.model.Person.Gender.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+/**
+ **  Test Collectors.toMap()  function
+ **  See {@linktourl https://www.baeldung.com/java-collectors-tomap}
+ */
 class ToMapTest {
 
     private final Person jane = new Person("Jane", FEMALE, 41, "USA");
