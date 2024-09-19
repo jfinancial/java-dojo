@@ -12,6 +12,6 @@ public class GroupByTest {
 
     @Test
     void testGroupBy(){
-
+        throw new RuntimeException("Not implemented");
     }
 }
