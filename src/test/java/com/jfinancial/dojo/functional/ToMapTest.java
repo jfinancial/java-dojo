@@ -35,6 +35,9 @@ class ToMapTest {
 
     @Test
     void testCollectingToMapWhereDuplicatesAreAddedToASet() {
+
+        //second arg in toMap creates a set and implicitly does an addAll
+        //third argument is the merge function which merges the two values (i.e. the sets) for the duplicate key
         Map<String, Set<Person>> result = Stream.of(jane, brian, debbie, ahmad, stacy)
                 .collect(Collectors.toMap(
                         Person::getCountryCode,
