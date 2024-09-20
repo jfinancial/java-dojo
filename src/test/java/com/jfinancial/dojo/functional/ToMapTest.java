@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static com.jfinancial.dojo.model.Person.Gender.*;
+import static com.jfinancial.dojo.TestFixture.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -17,12 +17,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  **  See {@linktourl https://www.baeldung.com/java-collectors-tomap}
  */
 class ToMapTest {
-
-    private final Person jane = new Person("Jane", FEMALE, 41, "USA");
-    private final Person brian = new Person("Brian", MALE, 66, "GBR");
-    private final Person debbie = new Person("Debbie", FEMALE, 56, "GBR");
-    private final Person ahmad = new Person("Ahmad", MALE, 22, "UAE");
-    private final Person stacy = new Person("Stacy", FEMALE, 17, "IRL");
 
     @Test
     void testCollectingToMapWhereNoDuplicates() {
@@ -39,7 +33,7 @@ class ToMapTest {
 
     @Test
     void testCollectingToMapWhereDuplicatesAreAddedToASet() {
-
+        //This is similar to groupingBy except here we use a set
         //second arg in toMap creates a set and implicitly does an addAll
         //third argument is the merge function which merges the two values (i.e. the sets) for the duplicate key
         Map<String, Set<Person>> result = Stream.of(jane, brian, debbie, ahmad, stacy)
@@ -51,10 +45,10 @@ class ToMapTest {
                             return set1;
                         }
                 ));
-        assertThat(result.get("GBR")).containsExactly(brian,debbie);
+        assertThat(result.get("GBR")).containsAll(Set.of(brian,debbie));
         assertThat(result.get("USA")).containsExactly(jane);
         assertThat(result.get("IRL")).containsExactly(stacy);
         assertThat(result.get("UAE")).containsExactly(ahmad);
     }
-}
 
+}
