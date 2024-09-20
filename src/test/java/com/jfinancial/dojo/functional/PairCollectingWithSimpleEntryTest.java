@@ -15,6 +15,9 @@ class PairCollectingWithSimpleEntryTest {
 
     @Test
     void testCollectingPairsWithSimpleEntry(){
+
+        //we create a map mapping person to next person in the list
+
         var list = Stream.of(stacy, ahmad, jane, brian).toList();
         var entries = IntStream.range(0, list.size() - 1)
                 .mapToObj(i -> new AbstractMap.SimpleEntry<>(list.get(i), list.get(i + 1))).toList();
