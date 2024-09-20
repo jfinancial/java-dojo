@@ -12,12 +12,6 @@ import static com.jfinancial.dojo.TestFixture.*;
 import static java.util.stream.Collectors.counting;
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- **  Test groupBy function
- **  See {@linktourl https://www.baeldung.com/java-groupingby-collector}
- **  See {@linktourl https://www.baeldung.com/java-groupingby-count}
- **  See {@linktourl https://mkyong.com/java8/java-8-collectors-groupingby-and-mapping-example/}
- */
 class GroupingByTest {
 
     @Test

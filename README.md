@@ -19,5 +19,6 @@ This repo contains tests demonstrating how to use various constructs and librari
   - [The Difference Between map() and flatMap()](https://www.baeldung.com/java-difference-map-and-flatmap)
 
 ### Testing Hamcrest Matchers
+= Official [Java Hamcrest](https://hamcrest.org/JavaHamcrest/) documentation
 - [Testing with Hamcrest](https://www.baeldung.com/java-junit-hamcrest-guide)
 - [Hamcrest Common Core Matchers](https://www.baeldung.com/hamcrest-core-matchers)

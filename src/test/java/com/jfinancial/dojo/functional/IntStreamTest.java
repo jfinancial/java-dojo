@@ -21,6 +21,4 @@ class IntStreamTest {
         assertThat(even).doesNotContainAnyElementsOf(odd);
     }
 
-
-
 }

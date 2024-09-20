@@ -6,11 +6,6 @@ import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
-/**
- **  Test reduce() and sum() function
- **  See {@linktourlhttps://www.baeldung.com/java-stream-reduce}
- */
 class ReduceAndSumTest {
 
     private static final Integer[] INTEGERS = IntStream.range(1, 11).boxed().toArray(Integer[]::new);

@@ -12,10 +12,6 @@ import static com.jfinancial.dojo.TestFixture.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-/**
- **  Test Collectors.toMap()  function
- **  See {@linktourl https://www.baeldung.com/java-collectors-tomap}
- */
 class ToMapTest {
 
     @Test

@@ -63,5 +63,4 @@ class HamcrestMatchersTest {
         assertThat(folks, hasItemInArray(ahmad));
         assertThat(stacy, isIn(Arrays.stream(folks).toList()));
     }
-
 }
