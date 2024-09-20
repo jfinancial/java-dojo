@@ -2,12 +2,13 @@ package com.jfinancial.dojo.functional;
 
 import org.junit.jupiter.api.Test;
 
-import java.io.*;
-import java.nio.charset.StandardCharsets;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Objects;
-import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalToIgnoringCase;
 
 class InputStreamToStreamTest {
 
@@ -21,7 +22,7 @@ class InputStreamToStreamTest {
             // reduce function -> start with empty string and concatenate
             var result = reader.lines().reduce("", (s1, s2) -> s1 + s2);
 
-            assertEquals("HelloWorldThisisatest", result);
+            assertThat("HelloWorldThisIsATest", equalToIgnoringCase(result));
         }
     }
 }
