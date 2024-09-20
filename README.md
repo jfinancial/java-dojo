@@ -17,6 +17,9 @@ This repo contains tests demonstrating how to use various constructs and librari
   - [Count Occurrences Using Java groupingBy Collector](https://www.baeldung.com/java-groupingby-count)
 - `flatMap`
   - [The Difference Between map() and flatMap()](https://www.baeldung.com/java-difference-map-and-flatmap)
+- `mapToObj`
+  - [Collect Successive Pairs From a Stream in Java](https://www.baeldung.com/java-stream-collect-successive-pairs)
+
 
 ### Testing Hamcrest Matchers
 = Official [Java Hamcrest](https://hamcrest.org/JavaHamcrest/) documentation
