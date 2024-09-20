@@ -21,6 +21,12 @@ This repo contains tests demonstrating how to use various constructs and librari
   - [Collect Successive Pairs From a Stream in Java](https://www.baeldung.com/java-stream-collect-successive-pairs)
 
 
+### Monads in Java 
+- [The Absolute Best Intro to Monads For Software Engineers](https://www.youtube.com/watch?v=C2w45qRc3aU)
+- [Monads In Java](https://www.baeldung.com/java-monads)
+- [What Is a Monad? Basic Theory for a Java Developer](https://dzone.com/articles/what-is-a-monad-basic-theory-for-a-java-developer)
+
+
 ### Testing Hamcrest Matchers
 = Official [Java Hamcrest](https://hamcrest.org/JavaHamcrest/) documentation
 - [Testing with Hamcrest](https://www.baeldung.com/java-junit-hamcrest-guide)
