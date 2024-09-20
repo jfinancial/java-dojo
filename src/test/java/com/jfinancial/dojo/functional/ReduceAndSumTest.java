@@ -18,6 +18,7 @@ class ReduceAndSumTest {
         assertThat(summedByReduce).isEqualTo(55);
     }
 
+    @SuppressWarnings("Convert2MethodRef")
     @Test
     void testFunctionalSummingUsingLambda() {
         int result = Arrays.stream(INTEGERS)
